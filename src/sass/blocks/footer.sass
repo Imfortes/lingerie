@@ -1,0 +1,168 @@
+.footer-wrap
+  width: 100vw
+
+
+.accordion
+  width: 100%
+  border-bottom: 1px solid #d1d1d1
+  height: 60px
+  font-size: 2rem
+  display: flex
+  justify-content: center
+  align-items: center
+  cursor: pointer
+  text-align: center
+  font-family: "Cormorant Infant", serif
+
+
+.panel
+  width: 100%
+  display: none
+  border-bottom: 1px solid #d1d1d1
+  transition: 2s ease-out
+  color: #333
+
+.items-column
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+  align-items: flex-start
+
+.show
+  display: flex
+  justify-content: center
+  align-items: center
+  transition: 2s ease-out
+
+.accordion-list
+  padding: 0
+  margin: 0
+  list-style: none
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  padding-bottom: 1rem
+  transition: 1s ease-out
+
+.active
+  border-bottom: none
+
+.accordion i
+  position: absolute
+  transform: translate(-6px, 0)
+  margin-top: 16px
+
+.accordion i:before, .accordion i:after
+  content: ""
+  position: absolute
+  background-color: #eee
+  width: 3px
+  height: 9px
+
+.accordion i:before
+  transform: translate(-2px, 0) rotate(45deg)
+
+.accordion i:after
+  transform: translate(2px, 0) rotate(-45deg)
+
+.accordion-list-item a
+  text-decoration: none
+  color: #333
+
+.accordion-list-item a:hover
+  text-decoration: none
+  font-weight: bold
+
+.news
+  width: 100%
+  height: 60px
+  font-size: 2rem
+  display: flex
+  justify-content: center
+  align-items: center
+  text-align: center
+  font-family: "Cormorant Infant", serif
+
+.subscribe
+  width: 100%
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  &-descr
+    width: 400px
+    text-align: center
+  &-input
+    max-width: 250px
+    margin-right: auto
+    margin-bottom: 15px
+    margin-left: auto
+    text-align: center
+    box-sizing: border-box
+    border: 1px solid #939393
+    padding: 10px 13px
+    font: 15px "Nunito",Helvetica,Arial,sans-serif
+    line-height: 1
+    color: #333 !important
+    outline: 0
+    border-radius: 5px !important
+
+.subscribe-btn
+  text-decoration: none
+  -webkit-border-radius: 0.4rem
+  -moz-border-radius: 0.4rem
+  border-radius: 0.4rem
+  padding: 0.6rem
+  font-size: 15px
+  background-color: #333
+  border: 1px solid #333
+  color: #fff
+  transition: .5s ease-out
+  cursor: pointer
+  box-sizing: border-box
+
+
+.subscribe-btn:hover
+  background-color: #ffffff
+  color: #333
+  border: 1px solid #333
+
+
+.socials
+  font-family: "Cormorant Infant",serif
+  &-title
+    text-align: center
+    font-size: 24px
+    font-weight: 700
+    letter-spacing: 1.5px
+    line-height: 1.7
+    color: #333
+  &-list
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    list-style: none
+    padding: 0
+    &-item
+      margin-left: 0.5rem
+      margin-right: 0.5rem
+
+.socials-list-item:first-child
+  margin-left: 0
+
+.footer-wrap-copyright
+  padding-top: 0.5rem
+  padding-bottom: 0.5rem
+  margin-bottom: 1rem
+  text-align: center
+  border-top: 1px solid #d1d1d1
+  border-bottom: 1px solid #d1d1d1
+
+.socials-list-item a img
+  width: 22px
+  height: 22px
+
+.socials-list-item a:hover img
+  transform: scale(1.1)

@@ -1,0 +1,208 @@
+.header-container-wrap
+  margin-top: .5rem
+  width: 100%
+  
+.account
+  &__log-link
+    color: #333
+    text-decoration: none
+    margin-left: 2rem
+
+
+.hidden
+  display: none
+  @media screen and (min-width: 1000px)
+    display: inline
+
+
+.header-top-panel-wrap
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.store-switcher
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+
+.open-store-switcher
+  padding: 0
+  margin: 0
+  font-size: 1rem
+  background: none
+  border: 0
+  margin-right: 2rem
+
+
+
+// -----header-bottom-panel-wrap-----
+
+.header-bottom-panel-wrap
+  position: relative
+
+.logo
+  text-align: center
+  font-size: 1.4rem
+  position: absolute
+  font-weight: bold
+  left: 50%
+  top: -.6rem
+  margin-left: -61px
+  @media screen and (min-width: 1000px)
+    top: -2rem
+
+  &-link
+    text-decoration: none
+    color: #333333
+    cursor: pointer
+
+.minicart img
+  width: 20px
+  height: 20px
+  margin-right: 2rem
+
+.hamburger
+  top: -15%
+  left: -12.5rem
+  @media screen and (min-width: 1000px)
+    display: none
+
+.navbar-menu__container
+  display: none
+  @media screen and (min-width: 1000px)
+    display: block
+
+
+.menu-small-active
+  display: flex
+  flex-direction: column
+  width: 100vw
+  &-item
+    width: 100%
+  @media screen and (min-width: 1000px)
+    display: none
+
+.navbar-menu__list
+  display: flex
+  width: 100%
+  flex-direction: row
+  justify-content: center
+  align-items: center
+  list-style: none
+  margin-top: 1rem
+  padding-left: 0
+  &--item
+    margin-left: 2rem
+    margin-right: 2rem
+    text-align: center
+
+.navbar-menu__list--item a
+  text-decoration: none
+  color: #333
+
+.navbar-menu__list--item a:hover
+  text-decoration: none
+  font-weight: bold
+
+.search
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+
+
+  &__input
+    width: calc(100% - 25%)
+
+    &--form
+      width: 85%
+      height: 1.5rem
+      -webkit-border-radius: 0.4rem
+      -moz-border-radius: 0.4rem
+      border-radius: 0.4rem
+      padding: 0.3rem
+      margin-left: 2rem
+
+  &__btn
+
+    &--form
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 80px
+      height: 1.5rem
+      background-color: #333
+      border: 1px solid #333
+      padding: 0.3rem
+      color: #ffffff
+      -webkit-border-radius: 0.4rem
+      -moz-border-radius: 0.4rem
+      border-radius: 0.4rem
+      margin-right: 2rem
+      transition: 0.5s ease-out
+      box-sizing: border-box
+      outline: none
+
+.search__btn--form:hover
+  background-color: #ffffff
+  color: #333
+  border: 1px solid #333
+
+
+#menuToggle
+  overflow: hidden
+  width: 100%
+  height: 100%
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+  align-items: flex-start
+  margin-left: 2rem
+  margin-top: .4rem
+  margin-bottom: .4rem
+  @media screen and (min-width: 1000px)
+    display: none
+
+
+#menuToggle input
+  display: flex
+  width: 18px
+  height: 18px
+  position: absolute
+  cursor: pointer
+  opacity: 0
+  z-index: 1
+
+
+#menuToggle span
+  width: 40px
+  height: 7px
+  margin-bottom: 6px
+  background: #d1d1d1
+  border-radius: 4px
+  -webkit-transition: all .5s cubic-bezier(.08,.81,.87,.71)
+  -moz-transition: all .5s cubic-bezier(.08,.81,.87,.71)
+  -ms-transition: all .5s cubic-bezier(.08,.81,.87,.71)
+  -o-transition: all .5s cubic-bezier(.08,.81,.87,.71)
+  transition: all .5s cubic-bezier(.08,.81,.87,.71)
+
+#span1
+  transform-origin: 4px 0px
+
+#span3
+  transform-origin: bottom right
+
+#menuToggle input:checked ~ #span1
+  background-color: #d1d1d1
+  transform: rotate(45deg) translate(8px)
+
+#menuToggle input:checked ~ #span2
+  background-color: #d1d1d1
+  transform: rotate(495deg) translate(4px)
+
+#menuToggle input:checked ~ #span3
+  background-color: #d1d1d1
+  transform: rotate(45deg)
+  opacity: 0
+

@@ -1,0 +1,72 @@
+.main
+  width: 100vw
+  margin-top: 1rem
+  height: auto
+
+
+
+.main__new-wrap,
+.main__another-collections-wrap--lingerie,
+.main__another-collections-wrap--nightwear
+  height: auto
+  box-sizing: border-box
+  position: relative
+  background-position: center
+  -webkit-background-size: cover
+  background-size: cover
+  background-repeat: no-repeat
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  filter: grayscale(100%)
+
+  &--img
+    width: 100%
+
+  &--title
+    padding-top: 0
+    position: absolute
+    font-size: 1.8rem
+    top: 50%
+    margin-top: -3.6rem
+    text-align: center
+    z-index: 100
+    color: #ffffff
+
+
+  &--link
+    position: absolute
+    font-size: 1rem
+    top: 50%
+    margin-bottom: -2rem
+    text-align: center
+    z-index: 100
+    color: #ffffff
+    text-decoration: none
+    padding: 1rem
+    transition: 1s ease-out
+    -webkit-border-radius: 0.4rem
+    -moz-border-radius: 0.4rem
+    border-radius: 0.4rem
+    @media screen and (min-width: 800px)
+      border: 1px solid #ffffff
+    &:hover
+      background: #ffffff
+      color: #000
+      -webkit-border-radius: 0.4rem
+      -moz-border-radius: 0.4rem
+      border-radius: 0.4rem
+
+.main__another-collections-wrap
+  margin-top: 2rem
+  margin-bottom: 1rem
+  display: flex
+  flex-direction: row
+  justify-content: space-around
+  align-items: center
+
+  &--lingerie,
+  &--nightwear
+    width: 45%
+    filter: none
