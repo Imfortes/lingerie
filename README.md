@@ -1,11 +1,9 @@
-# Edge Photography
-
-This is mobile first landing page
+# La Lorem lingerie
 
 In the project I used:
 
     - HTML for markup
     - Sass for styling 
-    - jQuery for scrolling
+    - Vanilla JS
     - gulp for building
-# lingerie
+
